@@ -1,12 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
+import { NavigationContainer } from "@react-navigation/native";
+import MainNavigation from "./src/navigation/mainNavigation";
 import { StyleSheet, Text, View } from 'react-native';
+import colors from "./src/utils/colors";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+    <StatusBar
+      barStyle="dark-content"
+      backgroundColor={colors["color-primary-500"]}
+    />
+    <MainNavigation />
+  </NavigationContainer>
   );
 }
 
