@@ -6,6 +6,7 @@ import {
   Text,
   Dimensions,
   ImageBackground,
+  Alert 
 } from "react-native";
 import colors from "../utils/colors";
 import { RValue } from "../utils/normalize";
@@ -22,6 +23,21 @@ const HomeScreen = (props) => {
   useEffect(() => {
 
   }, []);
+
+  const onPressYes =()=>{
+    Alert.alert(
+      "Por fin!!",
+      "Ahora oficialmente eres mi novia amorcito jejejeje <3 ",
+    );
+  }
+  const onPressYesRed =()=>{
+    const onPressYes =()=>{
+      Alert.alert(
+        "UPS",
+        "De igual forma,ahora oficialmente eres mi novia amorcito jejejeje <3 ",
+      );
+    }
+  }
 
   return (
     <View style={styles.mainContainer}>
