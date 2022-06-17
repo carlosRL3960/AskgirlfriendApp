@@ -52,7 +52,7 @@ const HomeScreen = (props) => {
             <View style={styles.buttonsView}>
             <Button buttonStyle={{...styles.buttonStyle, backgroundColor:colors.red}}
             onPress={() => {
-              
+              onPressYesRed(); 
             }} 
              >
                 Si pero en rojo 
@@ -60,6 +60,7 @@ const HomeScreen = (props) => {
             </Button>
             <Button  buttonStyle={{...styles.buttonStyle,backgroundColor:colors.success}}            
             onPress={() => {
+              onPressYes();
             }} 
              >
                 Si
