@@ -64,6 +64,7 @@ const HomeScreen = (props) => {
             }} 
              >
                 Si
+                
                 <Icon style={{marginLeft:RValue(10)}} name="check"  type='material-community' color={colors.white} />
             </Button>
             </View>
